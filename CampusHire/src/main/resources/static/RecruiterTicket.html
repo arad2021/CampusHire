@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Ticket Information</title>
+    <link rel="stylesheet" href="./Style/recRegister.css">
+</head>
+<body>
+<div class="register-container">
+    <div class="progress-bar">
+        <div class="progress-step inactive">1</div>
+        <div class="progress-step">2</div>
+        <div class="progress-step inactive">3</div>
+    </div>
+    <div class="logo">Job Requirements</div>
+
+    <form class="register-form" id="ticketForm">
+        <div class="input-group">
+            <label for="remote">Remote Work</label>
+            <select id="remote" name="remote" required>
+                <option value="">Select an option</option>
+                <option value="Remote">Remote</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="Onsite">Onsite</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="experience">Required Experience (years)</label>
+            <input type="number" id="experience" name="experience" required min="0" max="50">
+        </div>
+
+        <div class="input-group">
+            <label for="location">Job Location</label>
+            <input type="text" id="location" name="location" required placeholder="e.g., New York, NY">
+        </div>
+
+        <div class="input-group">
+            <label for="jobType">Job Type</label>
+            <select id="jobType" name="jobType" required>
+                <option value="">Select job type</option>
+                <option value="Full-time">Full-time</option>
+                <option value="Part-time">Part-time</option>
+                <option value="Contract">Contract</option>
+                <option value="Internship">Internship</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="industry">Industry</label>
+            <input type="text" id="industry" name="industry" required placeholder="e.g., Technology, Finance">
+        </div>
+
+        <div class="arrow-nav">
+            <button type="button" class="arrow-btn" id="backBtn" title="Back">&#8592;</button>
+            <button type="button" class="arrow-btn" id="nextBtn" title="Next Step">&#8594;</button>
+        </div>
+    </form>
+
+    <div class="footer">
+        <a href="RecruiterRegister.html" style="color: #7f8c8d; text-decoration: none;">&larr; Back to registration</a>
+    </div>
+</div>
+
+<div class="success-screen" id="successScreen">
+    <div class="success-icon">✓</div>
+    <div class="success-message">Registration Completed Successfully!</div>
+    <div class="success-actions">
+        <button class="success-btn login" onclick="window.location.href='RecruiterLogin.html'">Go to Login</button>
+        <button class="success-btn home" onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+</div>
+
+<script src="./Scripts/recruiterTicket.js"></script>
+</body>
+</html> 

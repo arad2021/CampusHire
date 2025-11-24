@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Ticket Information</title>
+    <link rel="stylesheet" href="./Style/recRegister.css">
+    <link rel="stylesheet" href="./Style/studRegister.css">
+</head>
+<body>
+<div class="register-container">
+    <div class="progress-bar">
+        <div class="progress-step inactive">1</div>
+        <div class="progress-step">2</div>
+        <div class="progress-step inactive">3</div>
+    </div>
+    <div class="logo">Student Ticket Information</div>
+
+    <form class="register-form" id="ticketForm">
+        <div class="input-group">
+            <label for="remote">Remote Work Preference</label>
+            <select id="remote" name="remote" required>
+                <option value="">Select an option</option>
+                <option value="Remote">Remote</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="Onsite">Onsite</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="experience">Experience (years)</label>
+            <input type="number" id="experience" name="experience" required min="0" max="50">
+        </div>
+
+        <div class="input-group">
+            <label for="location">Preferred Location</label>
+            <select id="location" name="location" required>
+                <option value="">Select a city</option>
+                <option value="Acre">Acre</option>
+                <option value="Afula">Afula</option>
+                <option value="Arad">Arad</option>
+                <option value="Ariel">Ariel</option>
+                <option value="Ashdod">Ashdod</option>
+                <option value="Ashkelon">Ashkelon</option>
+                <option value="Baka al-Gharbiyye">Baka al-Gharbiyye</option>
+                <option value="Bat Yam">Bat Yam</option>
+                <option value="Be'er Sheva">Be'er Sheva</option>
+                <option value="Beit She'an">Beit She'an</option>
+                <option value="Beit Shemesh">Beit Shemesh</option>
+                <option value="Bnei Brak">Bnei Brak</option>
+                <option value="Dimona">Dimona</option>
+                <option value="Eilat">Eilat</option>
+                <option value="Elad">Elad</option>
+                <option value="Givat Shmuel">Givat Shmuel</option>
+                <option value="Givatayim">Givatayim</option>
+                <option value="Hadera">Hadera</option>
+                <option value="Haifa">Haifa</option>
+                <option value="Herzliya">Herzliya</option>
+                <option value="Hod HaSharon">Hod HaSharon</option>
+                <option value="Holon">Holon</option>
+                <option value="Jerusalem">Jerusalem</option>
+                <option value="Kafr Qasim">Kafr Qasim</option>
+                <option value="Karmiel">Karmiel</option>
+                <option value="Kfar Saba">Kfar Saba</option>
+                <option value="Kiryat Ata">Kiryat Ata</option>
+                <option value="Kiryat Bialik">Kiryat Bialik</option>
+                <option value="Kiryat Gat">Kiryat Gat</option>
+                <option value="Kiryat Malakhi">Kiryat Malakhi</option>
+                <option value="Kiryat Motzkin">Kiryat Motzkin</option>
+                <option value="Kiryat Ono">Kiryat Ono</option>
+                <option value="Kiryat Shmona">Kiryat Shmona</option>
+                <option value="Kiryat Yam">Kiryat Yam</option>
+                <option value="Lod">Lod</option>
+                <option value="Ma'alot-Tarshiha">Ma'alot-Tarshiha</option>
+                <option value="Ma'ale Adumim">Ma'ale Adumim</option>
+                <option value="Migdal HaEmek">Migdal HaEmek</option>
+                <option value="Modi'in-Maccabim-Re'ut">Modi'in-Maccabim-Re'ut</option>
+                <option value="Nahariya">Nahariya</option>
+                <option value="Nazareth">Nazareth</option>
+                <option value="Nazareth Illit (now called Nof HaGalil)">Nazareth Illit (now called Nof HaGalil)</option>
+                <option value="Nesher">Nesher</option>
+                <option value="Ness Ziona">Ness Ziona</option>
+                <option value="Netanya">Netanya</option>
+                <option value="Netivot">Netivot</option>
+                <option value="Ofakim">Ofakim</option>
+                <option value="Or Akiva">Or Akiva</option>
+                <option value="Or Yehuda">Or Yehuda</option>
+                <option value="Petah Tikva">Petah Tikva</option>
+                <option value="Raanana">Raanana</option>
+                <option value="Ramat Gan">Ramat Gan</option>
+                <option value="Ramat HaSharon">Ramat HaSharon</option>
+                <option value="Ramla">Ramla</option>
+                <option value="Rehovot">Rehovot</option>
+                <option value="Rishon LeZion">Rishon LeZion</option>
+                <option value="Rosh HaAyin">Rosh HaAyin</option>
+                <option value="Sakhnin">Sakhnin</option>
+                <option value="Sderot">Sderot</option>
+                <option value="Shoham">Shoham</option>
+                <option value="Taibe">Taibe</option>
+                <option value="Tamra">Tamra</option>
+                <option value="Tel Aviv-Yafo">Tel Aviv-Yafo</option>
+                <option value="Tiberias">Tiberias</option>
+                <option value="Tirat Carmel">Tirat Carmel</option>
+                <option value="Tira">Tira</option>
+                <option value="Umm al-Fahm">Umm al-Fahm</option>
+                <option value="Yavne">Yavne</option>
+                <option value="Yehud-Monosson">Yehud-Monosson</option>
+                <option value="Yokneam Illit">Yokneam Illit</option>
+                <option value="Zefat (Safed)">Zefat (Safed)</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="jobType">Job Type Preference</label>
+            <select id="jobType" name="jobType" required>
+                <option value="">Select job type</option>
+                <option value="Full-time">Full-time</option>
+                <option value="Part-time">Part-time</option>
+                <option value="Contract">Contract</option>
+                <option value="Internship">Internship</option>
+
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="industry">Preferred Industry</label>
+            <select id="industry" name="industry" required>
+                <option value="">Select industry</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="Software Development">Software Development</option>
+                <option value="Data Science & AI">Data Science & AI</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Mobile Development">Mobile Development</option>
+                <option value="Fintech">Fintech</option>
+                <option value="HealthTech">HealthTech</option>
+                <option value="E-commerce">E-commerce</option>
+                <option value="Telecom">Telecom</option>
+                <option value="Gaming">Gaming</option>
+                <option value="IT & Support">IT & Support</option>
+                <option value="Education Tech">Education Tech</option>
+                <option value="Automotive Tech">Automotive Tech</option>
+                <option value="Defense & Aerospace">Defense & Aerospace</option>
+                <option value="General">General</option>
+            </select>
+        </div>
+
+        <div class="arrow-nav">
+            <button type="button" class="arrow-btn" id="backBtn" title="Back">&#8592;</button>
+            <button type="button" class="arrow-btn" id="nextBtn" title="Next Step">&#8594;</button>
+        </div>
+    </form>
+</div>
+
+<div class="success-screen" id="successScreen">
+    <div class="success-icon">✓</div>
+    <div class="success-message">Registration Completed Successfully!</div>
+    <div class="success-actions">
+        <button class="success-btn login" onclick="window.location.href='StudentLogin.html'">Go to Login</button>
+        <button class="success-btn home" onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+</div>
+
+<script src="./Scripts/studentTicket.js"></script>
+</body>
+</html> 

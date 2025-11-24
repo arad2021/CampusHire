@@ -1,0 +1,19 @@
+Student > log in  server accept 
+ student inside > 1.edit student ticket / file  > send to server which will update > data base
+                                                <return to student
+                  2.check job applications     > server return student applications from data base > data base get the request 
+                    student get applications   <                                 return to student < db return to server 
+ 
+                  3.check new job to apply to  > server give 2 options after geting jobs from db > db get request
+                                               < all jobs to student  + 2 options                            < db give server the jobs
+                                                2 options
+                                                1.filter jobs  > server filter jobs then return
+                                                               < server give options again to filter or apply 
+                                                2.apply to jobs
+
+
+
+
+
+
+ 

@@ -1,0 +1,207 @@
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .input-group {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: #2ecc71;
+            outline: none;
+        }
+
+        .login-btn {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #27ae60;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        body {
+            background: #f7f9fb;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            padding: 40px 32px 32px 32px;
+            text-align: center;
+        }
+
+        .portal-header {
+            font-size: 2.2em;
+            margin-bottom: 24px;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .section-title {
+            font-size: 1.3em;
+            margin-top: 30px;
+        }
+
+        #addJobBtn {
+            margin: 20px 0 32px 0;
+            padding: 12px 28px;
+            background: linear-gradient(90deg, #2ecc71 60%, #27ae60 100%);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(46, 204, 113, 0.08);
+        }
+
+        #addJobBtn:hover {
+            background: linear-gradient(90deg, #27ae60 60%, #2ecc71 100%);
+            box-shadow: 0 4px 16px rgba(46, 204, 113, 0.15);
+        }
+
+        .job-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 0;
+            background: #fafbfc;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        }
+
+        .job-table th,
+        .job-table td {
+            padding: 14px 12px;
+            text-align: left;
+        }
+
+        .job-table th {
+            background: #f1f3f6;
+            color: #333;
+            font-weight: 600;
+            border-bottom: 2px solid #e5e8ec;
+        }
+
+        .job-table tr {
+            transition: background 0.15s;
+        }
+
+        .job-table tr:hover {
+            background: #f4f8fa;
+        }
+
+        .job-table td {
+            border-bottom: 1px solid #e5e8ec;
+            color: #444;
+        }
+
+        .job-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .action-btn {
+            margin-right: 8px;
+            padding: 7px 16px;
+            border: none;
+            border-radius: 6px;
+            background: #eaf6f0;
+            color: #27ae60;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .action-btn:hover {
+            background: #27ae60;
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 4px;
+            }
+
+            .portal-header {
+                font-size: 1.3em;
+            }
+
+            .job-table th,
+            .job-table td {
+                padding: 8px 4px;
+                font-size: 0.95em;
+            }
+
+            #addJobBtn {
+                padding: 10px 12px;
+                font-size: 1em;
+            }
+        }

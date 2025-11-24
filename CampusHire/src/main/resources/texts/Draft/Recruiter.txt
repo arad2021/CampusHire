@@ -1,0 +1,13 @@
+
+Recruiter > log in             req from server                             > fetch  all jobs , job applicantions from server for the recruiter jobs > db return all   
+                                                                           <server present options +  present all jobs/ applications   < to server
+           present all jobs  from recruiter and  all applications for each job 
+
+           1.add a job make a job object and send to server                > server send job to data base > 
+                                                                           <return to options
+           2. edit a job choose a specific job and edit                    >  send to server will send to db to update > db update
+                                                                           <return to options 
+                                                   
+           3. answer applications  choose specific application and answer > server will send to db to update > db update
+                                                                          <return to options 
+                                   

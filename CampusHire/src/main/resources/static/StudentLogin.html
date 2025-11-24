@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="Style/studLogin.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">Student Portal</div>
+        
+        <form id="loginForm" class="login-form">
+            <div class="input-group">
+                <label for="studentIdInput">Student ID</label>
+                <input type="text" id="studentIdInput" name="studentId" placeholder="Enter your student ID" required>
+            </div>
+            
+            <div id="loginError" class="error-message" style="color: red; display: none;"></div>
+            
+            <button type="submit" class="login-btn">Sign In</button>
+        </form>
+        
+        <div class="footer">
+            Don't have an account? <a href="StudentRegister.html" style="color: #3498db; text-decoration: none;">Register here</a>
+            <br><br>
+            <a href="index.html" style="color: #7f8c8d; text-decoration: none;">← Back to main page</a>
+        </div>
+    </div>
+    <script src="Scripts/student-login.js"></script>
+</body>
+</html>

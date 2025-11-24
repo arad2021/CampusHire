@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Registration</title>
+    <link rel="stylesheet" href="./Style/recRegister.css">
+</head>
+<body>
+<div class="register-container">
+    <div class="progress-bar">
+        <div class="progress-step">1</div>
+        <div class="progress-step inactive last-step">2</div>
+    </div>
+    <div class="logo">Recruiter Registration</div>
+
+    <form class="register-form" id="recruiterForm" autocomplete="off">
+        <div class="input-group">
+            <label for="recruiter-id">Recruiter ID</label>
+            <input type="text" id="recruiter-id" name="recruiter-id">
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="input-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+        </div>
+
+        <div class="input-group">
+            <label for="email">Work Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="input-group">
+            <label for="company-name">Company Name</label>
+            <input type="text" id="company-name" name="company-name" required>
+        </div>
+
+        <div class="arrow-nav">
+            <button type="button" class="arrow-btn" id="nextBtn" title="Next Step">&#8594;</button>
+        </div>
+    </form>
+
+    <div class="footer">
+        Already have an account? <a href="RecruiterLogin.html" style="color: #2ecc71; text-decoration: none;">Login here</a>
+        <br><br>
+        <a href="index.html" style="color: #7f8c8d; text-decoration: none;">&larr; Back to main page</a>
+    </div>
+</div>
+
+<script src="./Scripts/jrecReg.js"></script>
+</body>
+</html>

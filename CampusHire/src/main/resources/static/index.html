@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to CampusHire</title>
+    <link rel="stylesheet" href="./Style/indexCSS.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="welcome-title">Welcome to CampusHire</div>
+        
+        <div class="options-container" id="mainOptions">
+            <button class="option-btn" id="studentBtn">I'm a Student</button>
+            <button class="option-btn secondary" id="recruiterBtn">I'm a Job Recruiter</button>
+        </div>
+        
+        <div class="options-container hidden" id="studentOptions">
+            <button class="option-btn" onclick="window.location.href='StudentLogin.html'">Student Login</button>
+            <button class="option-btn secondary" onclick="window.location.href='StudentRegister.html'">Student Register</button>
+            <button class="option-btn" style="background-color: #e74c3c;" onclick="resetOptions()">Back</button>
+        </div>
+        
+        <div class="options-container hidden" id="recruiterOptions">
+            <button class="option-btn" onclick="window.location.href='RecruiterLogin.html'">Recruiter Login</button>
+            <button class="option-btn secondary" onclick="window.location.href='RecruiterRegister.html'">Recruiter Register</button>
+            <button class="option-btn" style="background-color: #e74c3c;" onclick="resetOptions()">Back</button>
+        </div>
+    </div>
+    
+    <script src="./Scripts/index.js"></script>
+</body>
+</html>

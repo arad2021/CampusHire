@@ -1,0 +1,237 @@
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f8fafc;
+        }
+
+        .welcome-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .welcome-title {
+            margin-bottom: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .option-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+
+        .option-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .option-btn.secondary {
+            background-color: #2ecc71;
+        }
+
+        .option-btn.secondary:hover {
+            background-color: #27ae60;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .action-btn.selected {
+            background: #b6e4c7 !important;
+            color: #155d2a !important;
+            box-shadow: 0 0 0 2px #1a7f3733;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        /* Recruiter Portal Match Student Portal */
+        .container {
+            max-width: 1100px;
+            margin: 32px auto 0 auto;
+            padding: 0 16px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+        }
+
+        .portal-header {
+            background: #3498db;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 24px 16px 0 16px;
+            border-radius: 12px 12px 0 0;
+            margin-bottom: 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        button,
+        .action-btn {
+            padding: 10px 28px;
+            margin: 0 6px;
+            border: none;
+            border-radius: 6px;
+            background: #3498db;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(52, 152, 219, 0.08);
+        }
+
+        button:hover:not(:disabled),
+        .action-btn:hover:not(:disabled) {
+            background: #217dbb;
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.13);
+        }
+
+        button:disabled,
+        .action-btn:disabled {
+            background: #b2bec3;
+            cursor: not-allowed;
+        }
+
+        /* Table style match */
+        .job-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .job-table th,
+        .job-table td {
+            border: 1px solid #e1e1e1;
+            padding: 12px 14px;
+            text-align: left;
+        }
+
+        .job-table th {
+            background: #f4f4f4;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 32px 32px 24px 32px;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+        }
+
+        .back-btn {
+            background: #e6f4ea;
+            color: #1a7f37;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 18px;
+            font-size: 15px;
+            margin-bottom: 18px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .back-btn:hover {
+            background: #c3e6d6;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 24px;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #222;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-bottom: 18px;
+            background: #f8fafc;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #e5e7eb;
+            border-right: 1px solid #e5e7eb;
+            text-align: left;
+        }
+
+        th:last-child,
+        td:last-child {
+            border-right: none;
+        }
+
+        th {
+            background: #f1f5f9;
+            font-weight: 600;
+            color: #222;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .action-btn {
+            background: #e6f4ea;
+            color: #1a7f37;
+            border: none;
+            border-radius: 6px;
+            padding: 7px 16px;
+            font-size: 15px;
+            margin: 0 2px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .action-btn:hover {
+            background: #c3e6d6;
+        }
+
+        .error {
+            color: #b91c1c;
+            background: #fee2e2;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }

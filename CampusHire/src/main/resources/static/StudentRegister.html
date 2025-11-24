@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="./Style/studRegister.css">
+</head>
+<body>
+<div class="register-container">
+    <div class="progress-bar">
+        <div class="progress-step">1</div>
+        <div class="progress-step inactive">2</div>
+        <div class="progress-step inactive">3</div>
+    </div>
+    <div class="logo">Student Registration</div>
+
+    <form class="register-form" id="studentForm" autocomplete="off">
+        <div class="input-group">
+            <label for="student-id">Student ID</label>
+            <input type="text" id="student-id" name="student-id">
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="input-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+            </div>
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input type="text" id="age" name="age">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="input-group">
+            <label for="subject">Subject of Study</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <div class="input-group">
+            <label for="graduate-year">Expected Graduation Date</label>
+            <input type="date" id="graduate-year" name="graduate-year" required>
+        </div>
+
+        <div class="arrow-nav">
+            <button type="button" class="arrow-btn" id="nextBtn" title="Next Step">&#8594;</button>
+        </div>
+    </form>
+
+    <div class="footer">
+        Already have an account? <a href="StudentLogin.html" style="color: #3498db; text-decoration: none;">Login here</a>
+        <br><br>
+        <a href="index.html" style="color: #7f8c8d; text-decoration: none;">&larr; Back to main page</a>
+    </div>
+</div>
+
+<script src="./Scripts/studReg.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="Style/student-portal.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-content">
+      <div class="portal-title"> Student Portal</div>
+      <div class="user-info" id="userInfo"></div>
+    </div>
+  </header>
+  <main class="main-container">
+    <div id="notification" class="notification" style="display:none;"></div>
+    <div class="card actions-card">
+      <button id="findJobsBtn">Find Jobs</button>
+      <button id="myApplicationsBtn">My Applications</button>
+    </div>
+
+    <div class="card" id="jobsSection">
+      <h2 class="section-title">Jobs For You</h2>
+      <div class="section-default">Click 'Find Jobs' to see available jobs.</div>
+    </div>
+    <div class="card" id="applicationsSection">
+      <h2 class="section-title">Your Job Applications</h2>
+      <div class="section-default">Click 'My Applications' to view your applications.</div>
+    </div>
+  </main>
+  <script src="Scripts/student-portal.js?v=1.0.1"></script>
+</body>
+</html> 
